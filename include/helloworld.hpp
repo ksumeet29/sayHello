@@ -4,6 +4,6 @@
 #include <iostream>
 #include <string>
 
-uint_8 sayHello(std::string& name);
+int sayHello(std::string& name);
 
 #endif

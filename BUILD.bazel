@@ -1,0 +1,15 @@
+load("@rules_cc//cc:defs.bzl", "cc_library", "cc_binary")
+
+cc_library(
+            name="hello_world",
+            srcs=["src/helloworld.cpp"],
+            hdrs=["include/helloworld.hpp"],
+            includes=["include"],
+            visibility=["//visibility:public"],
+)
+
+cc_binary(
+            name="main",
+            srcs=["src/main.cpp"],
+            deps=[":hello_world"],
+)

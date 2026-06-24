@@ -6,7 +6,7 @@ int main() {
     std::string name;
         
     std::cout<<"Enter your first name\n";
-    getline(cin,name);
+    getline(std::cin,name);
 
     sayHello(name);
 
